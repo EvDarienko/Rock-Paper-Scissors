@@ -1,0 +1,92 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(255, 229, 195);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.game-container {
+    width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid rgb(34, 33, 33);
+    border-radius: 10px;
+}
+
+img {
+    width: 60px;
+    height: 60px;
+}
+
+.game-flexContainer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0;
+}
+
+.player1, .player2 {
+    flex-basis: 45%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border: 2px solid rgb(97, 96, 96);
+    border-radius: 10px;
+}
+
+.score-container {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;   
+    margin-top: 20px;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.scissors, .paper, .stone {
+    padding: 15px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid grey;
+}
+
+.info {
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: rgb(240, 248, 255);
+    border: 1px solid rgb(199, 208, 245);
+    border-radius: 10px;
+}
+
+button {
+    width: 150px;
+    height: 50px;
+    background-color: rgb(241, 199, 107);
+    border-radius: 10px;
+    border: 1px solid rgb(173, 143, 77);
+    cursor: pointer;
+}
+
+.player1 > div:hover {
+    cursor: pointer;
+    background-color: rgb(241, 199, 107);
+}
+
+button:hover {
+    background-color: rgba(241, 199, 107, 0.5);
+}
+
+.active {
+    background-color: rgb(241, 199, 107);
+}
